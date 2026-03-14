@@ -4,7 +4,7 @@ title: 구성원
 nav: true
 nav_order: 3
 dropdown: true
-permalink: /professor/
+nav_default: /professor/
 children:
   - title: 교수
     permalink: /professor/

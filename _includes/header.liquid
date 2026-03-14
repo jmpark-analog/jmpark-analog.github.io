@@ -49,10 +49,10 @@
                   {% endif %}
                 {% endfor %}
                 <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
-                  {% if p.permalink %}
+                  {% if p.nav_default %}
                   <a
                     class="nav-link dropdown-toggle"
-                    href="{{ p.permalink | relative_url }}"
+                    href="{{ p.nav_default | relative_url }}"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
