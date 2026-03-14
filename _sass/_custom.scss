@@ -1,0 +1,159 @@
+/*******************************************************************************
+ * 아날로그 신호 처리 연구실 — 커스텀 스타일
+ * Minimal design with emphasis on key topics
+ ******************************************************************************/
+
+// ── 페이지 헤더 공통 ─────────────────────────────────────────────────────────
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+// 중앙 정렬 헤더 (header_centered: true 페이지에 적용)
+.post-header.text-center {
+  .post-title,
+  .post-description,
+  .desc {
+    text-align: center;
+  }
+
+  // 제목 아래 포인트 라인
+  .post-title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--global-theme-color);
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
+  }
+}
+
+.post-description,
+.desc {
+  color: var(--global-text-color-light);
+  font-size: 1.05rem;
+  margin-top: 0.4rem;
+}
+
+// ── 교수 프로필 사진 하단 캡션 ────────────────────────────────────────────────
+
+.profile .more-info {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  text-align: center;
+
+  p {
+    display: block;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+// ── 연구 분야 카드 ────────────────────────────────────────────────────────────
+
+.research-card {
+  border: 1px solid var(--global-divider-color);
+  border-top: 3px solid var(--global-theme-color);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--global-bg-color);
+
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    margin-bottom: 0.3rem;
+  }
+
+  .card-text {
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// ── 섹션 구분선 ───────────────────────────────────────────────────────────────
+
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background: var(--global-theme-color);
+  border: none;
+  margin: 0 auto 1.8rem;
+  border-radius: 2px;
+}
+
+// ── 연락처 페이지 ─────────────────────────────────────────────────────────────
+
+.contact-block {
+  padding: 1.5rem;
+  border-left: 3px solid var(--global-theme-color);
+  background: var(--global-code-bg-color);
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1.5rem;
+
+  h5 {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: var(--global-theme-color);
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+
+    i {
+      width: 1.2rem;
+      text-align: center;
+      color: var(--global-theme-color);
+      margin-top: 0.1rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// ── 강의 페이지 ───────────────────────────────────────────────────────────────
+
+.teaching-list {
+  .course-item {
+    border-bottom: 1px solid var(--global-divider-color);
+    padding: 1rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .course-name {
+      font-weight: 600;
+      color: var(--global-text-color);
+    }
+
+    .course-meta {
+      font-size: 0.87rem;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+// ── 구성원 페이지 ─────────────────────────────────────────────────────────────
+
+.member-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--global-text-color-light);
+
+  i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--global-divider-color);
+  }
+}

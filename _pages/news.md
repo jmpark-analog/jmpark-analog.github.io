@@ -1,7 +1,8 @@
 ---
 layout: page
-title: news
+title: 공지사항
 permalink: /news/
+nav: false
 ---
 
 {% include news.liquid %}
